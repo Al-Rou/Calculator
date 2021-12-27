@@ -1,0 +1,1405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4U2-E1-n8g">
+    <device id="retina6_7" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="hgE-f9-I9L">
+            <objects>
+                <viewController id="4U2-E1-n8g" customClass="ViewController" customModule="CalculatorFirstAssignment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eWl-dZ-kys">
+                        <rect key="frame" x="0.0" y="0.0" width="926" height="428"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="evc-QV-vk0">
+                                <rect key="frame" x="516" y="70" width="350" height="332"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZdI-ia-WMW">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="60"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CGa-Su-M52" customClass="RoundButton" customModule="CalculatorFirstAssignment" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="60"/>
+                                                <color key="backgroundColor" red="0.94167947770000004" green="0.5979203582" blue="0.2194646895" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="FKI-E6-UqR"/>
+                                                    <constraint firstAttribute="width" constant="80" id="W1K-Vj-3CA"/>
+                                                    <constraint firstAttribute="height" constant="60" id="a0X-WF-q6m"/>
+                                                    <constraint firstAttribute="height" constant="80" id="bAx-k5-tTi"/>
+                                                </constraints>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="AC">
+                                                            <attributes>
+                                                                <color key="NSColor" systemColor="labelColor"/>
+                                                                <font key="NSFont" size="30" name="AvenirNext-DemiBold"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="W1K-Vj-3CA"/>
+                                                        <exclude reference="a0X-WF-q6m"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular">
+                                                    <mask key="constraints">
+                                                        <exclude reference="FKI-E6-UqR"/>
+                                                        <include reference="W1K-Vj-3CA"/>
+                                                        <include reference="a0X-WF-q6m"/>
+                                                        <exclude reference="bAx-k5-tTi"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="ClearButtonPressed:" destination="4U2-E1-n8g" eventType="touchUpInside" id="YlT-Ly-aOb"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GKX-KV-6XB" customClass="RoundButton" customModule="CalculatorFirstAssignment" customModuleProvider="target">
+                                                <rect key="frame" x="90" y="0.0" width="80" height="60"/>
+                                                <color key="backgroundColor" red="0.37885780740000002" green="0.5704521615" blue="0.68166388590000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="gbD-il-7re"/>
+                                                    <constraint firstAttribute="width" constant="80" id="noO-Xj-fNZ"/>
+                                                    <constraint firstAttribute="width" constant="80" id="xNb-gh-va3"/>
+                                                    <constraint firstAttribute="height" constant="80" id="zmk-qP-33M"/>
+                                                </constraints>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="+/-">
+                                                            <attributes>
+                                                                <color key="NSColor" systemColor="labelColor"/>
+                                                                <font key="NSFont" size="30" name="AvenirNext-DemiBold"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="gbD-il-7re"/>
+                                                        <exclude reference="noO-Xj-fNZ"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular">
+                                                    <mask key="constraints">
+                                                        <include reference="gbD-il-7re"/>
+                                                        <include reference="noO-Xj-fNZ"/>
+                                                        <exclude reference="xNb-gh-va3"/>
+                                                        <exclude reference="zmk-qP-33M"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="PlusMinusButtonPressed:" destination="4U2-E1-n8g" eventType="touchUpInside" id="db6-tf-i2y"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Du0-ub-xj1" customClass="RoundButton" customModule="CalculatorFirstAssignment" customModuleProvider="target">
+                                                <rect key="frame" x="180" y="0.0" width="80" height="60"/>
+                                                <color key="backgroundColor" red="0.37885780740000002" green="0.5704521615" blue="0.68166388590000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="3T8-mi-7gi"/>
+                                                    <constraint firstAttribute="height" constant="80" id="4I7-Nq-58R"/>
+                                                    <constraint firstAttribute="width" constant="80" id="Ztj-8n-7gT"/>
+                                                    <constraint firstAttribute="width" constant="80" id="adE-LE-gng"/>
+                                                </constraints>
+                                                <state key="normal" title="%">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="%">
+                                                            <attributes>
+                                                                <color key="NSColor" systemColor="labelColor"/>
+                                                                <font key="NSFont" size="30" name="AvenirNext-DemiBold"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="3T8-mi-7gi"/>
+                                                        <exclude reference="Ztj-8n-7gT"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular">
+                                                    <mask key="constraints">
+                                                        <include reference="3T8-mi-7gi"/>
+                                                        <exclude reference="4I7-Nq-58R"/>
+                                                        <include reference="Ztj-8n-7gT"/>
+                                                        <exclude reference="adE-LE-gng"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="PercentageButtonPressed:" destination="4U2-E1-n8g" eventType="touchUpInside" id="dzZ-QU-t2m"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YMf-AU-Ah4" customClass="RoundButton" customModule="CalculatorFirstAssignment" customModuleProvider="target">
+                                                <rect key="frame" x="270" y="0.0" width="80" height="60"/>
+                                                <color key="backgroundColor" red="0.37885780738160829" green="0.57045216145856481" blue="0.68166388586314031" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="ccy-il-yoz"/>
+                                                    <constraint firstAttribute="height" constant="80" id="iiM-lz-0XF"/>
+                                                    <constraint firstAttribute="width" constant="80" id="mZG-Hk-Fkh"/>
+                                                    <constraint firstAttribute="height" constant="60" id="vIy-qg-ef0"/>
+                                                </constraints>
+                                                <state key="normal" title="÷">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="÷">
+                                                            <attributes>
+                                                                <color key="NSColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                                                <font key="NSFont" size="30" name="AvenirNext-DemiBold"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="mZG-Hk-Fkh"/>
+                                                        <exclude reference="vIy-qg-ef0"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular" hidden="NO">
+                                                    <mask key="constraints">
+                                                        <exclude reference="ccy-il-yoz"/>
+                                                        <exclude reference="iiM-lz-0XF"/>
+                                                        <include reference="mZG-Hk-Fkh"/>
+                                                        <include reference="vIy-qg-ef0"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact" hidden="NO"/>
+                                                <connections>
+                                                    <action selector="DivideButtonPressed:" destination="4U2-E1-n8g" eventType="touchUpInside" id="0IR-Zw-FPp"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nB4-X3-b17">
+                                        <rect key="frame" x="0.0" y="68" width="350" height="60"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XyN-kv-Vb7" customClass="RoundButton" customModule="CalculatorFirstAssignment" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="60"/>
+                                                <color key="backgroundColor" red="0.35513684820000002" green="0.35677631469999999" blue="0.36169471450000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="2TA-tk-GSN"/>
+                                                    <constraint firstAttribute="height" constant="80" id="8za-rS-oqX"/>
+                                                    <constraint firstAttribute="width" constant="80" id="a3R-La-GKU"/>
+                                                    <constraint firstAttribute="width" constant="80" id="haI-PE-zzU"/>
+                                                </constraints>
+                                                <state key="normal" title="7">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="7">
+                                                            <attributes>
+                                                                <color key="NSColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                                                <font key="NSFont" size="30" name="AvenirNext-DemiBold"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="2TA-tk-GSN"/>
+                                                        <exclude reference="haI-PE-zzU"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular">
+                                                    <mask key="constraints">
+                                                        <include reference="2TA-tk-GSN"/>
+                                                        <exclude reference="8za-rS-oqX"/>
+                                                        <exclude reference="a3R-La-GKU"/>
+                                                        <include reference="haI-PE-zzU"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="PressNumberButton:" destination="4U2-E1-n8g" eventType="touchUpInside" id="hFe-4q-RpJ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Zx-C2-f0K" customClass="RoundButton" customModule="CalculatorFirstAssignment" customModuleProvider="target">
+                                                <rect key="frame" x="90" y="0.0" width="80" height="60"/>
+                                                <color key="backgroundColor" red="0.35513684820000002" green="0.35677631469999999" blue="0.36169471450000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="F3Z-8N-p9Y"/>
+                                                    <constraint firstAttribute="height" constant="60" id="QCh-Yg-RDL"/>
+                                                    <constraint firstAttribute="height" constant="80" id="YqW-HY-w7A"/>
+                                                    <constraint firstAttribute="width" constant="80" id="fVu-gG-Pw8"/>
+                                                </constraints>
+                                                <state key="normal" title="8">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="8">
+                                                            <attributes>
+                                                                <color key="NSColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                                                <font key="NSFont" size="30" name="AvenirNext-DemiBold"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="QCh-Yg-RDL"/>
+                                                        <exclude reference="fVu-gG-Pw8"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular">
+                                                    <mask key="constraints">
+                                                        <exclude reference="F3Z-8N-p9Y"/>
+                                                        <include reference="QCh-Yg-RDL"/>
+                                                        <exclude reference="YqW-HY-w7A"/>
+                                                        <include reference="fVu-gG-Pw8"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="PressNumberButton:" destination="4U2-E1-n8g" eventType="touchUpInside" id="EcX-rZ-sG0"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JzW-a7-KsP" customClass="RoundButton" customModule="CalculatorFirstAssignment" customModuleProvider="target">
+                                                <rect key="frame" x="180" y="0.0" width="80" height="60"/>
+                                                <color key="backgroundColor" red="0.35513684820000002" green="0.35677631469999999" blue="0.36169471450000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="1OZ-1a-3w8"/>
+                                                    <constraint firstAttribute="height" constant="80" id="aUo-V5-0aJ"/>
+                                                    <constraint firstAttribute="height" constant="60" id="jzR-mg-H61"/>
+                                                    <constraint firstAttribute="width" constant="80" id="kkR-GI-KMR"/>
+                                                </constraints>
+                                                <state key="normal" title="9">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="9">
+                                                            <attributes>
+                                                                <color key="NSColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                                                <font key="NSFont" size="30" name="AvenirNext-DemiBold"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="1OZ-1a-3w8"/>
+                                                        <exclude reference="jzR-mg-H61"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular">
+                                                    <mask key="constraints">
+                                                        <include reference="1OZ-1a-3w8"/>
+                                                        <exclude reference="aUo-V5-0aJ"/>
+                                                        <include reference="jzR-mg-H61"/>
+                                                        <exclude reference="kkR-GI-KMR"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="PressNumberButton:" destination="4U2-E1-n8g" eventType="touchUpInside" id="7so-zp-sv5"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OKd-9g-NyW" customClass="RoundButton" customModule="CalculatorFirstAssignment" customModuleProvider="target">
+                                                <rect key="frame" x="270" y="0.0" width="80" height="60"/>
+                                                <color key="backgroundColor" red="0.37885780740000002" green="0.5704521615" blue="0.68166388590000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="0Pf-cS-lAX"/>
+                                                    <constraint firstAttribute="height" constant="80" id="Qb4-0L-pPG"/>
+                                                    <constraint firstAttribute="height" constant="60" id="WMO-hd-2Yb"/>
+                                                    <constraint firstAttribute="width" constant="80" id="qPz-Dc-EFP"/>
+                                                </constraints>
+                                                <state key="normal" title="×">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="×">
+                                                            <attributes>
+                                                                <color key="NSColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                                                <font key="NSFont" size="30" name="AvenirNext-DemiBold"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="WMO-hd-2Yb"/>
+                                                        <exclude reference="qPz-Dc-EFP"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular">
+                                                    <mask key="constraints">
+                                                        <exclude reference="0Pf-cS-lAX"/>
+                                                        <exclude reference="Qb4-0L-pPG"/>
+                                                        <include reference="WMO-hd-2Yb"/>
+                                                        <include reference="qPz-Dc-EFP"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="MultiplButtonPressed:" destination="4U2-E1-n8g" eventType="touchUpInside" id="CYl-ai-Zgb"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="350" id="DFO-rb-CuQ"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="YBr-lj-0PZ"/>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="370" id="d5Q-4W-RAH"/>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="370" id="ft7-KD-qMW"/>
+                                            <constraint firstAttribute="height" constant="80" id="jm1-Pt-bVu"/>
+                                        </constraints>
+                                        <variation key="heightClass=compact-widthClass=regular">
+                                            <mask key="constraints">
+                                                <exclude reference="DFO-rb-CuQ"/>
+                                                <exclude reference="YBr-lj-0PZ"/>
+                                                <exclude reference="d5Q-4W-RAH"/>
+                                                <exclude reference="ft7-KD-qMW"/>
+                                                <exclude reference="jm1-Pt-bVu"/>
+                                            </mask>
+                                        </variation>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="iQQ-hO-rwd">
+                                        <rect key="frame" x="0.0" y="136" width="350" height="60"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nSE-0r-XK0" customClass="RoundButton" customModule="CalculatorFirstAssignment" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="60"/>
+                                                <color key="backgroundColor" red="0.35513684820000002" green="0.35677631469999999" blue="0.36169471450000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="1Xl-TQ-SJg"/>
+                                                    <constraint firstAttribute="height" constant="60" id="42C-cq-IjT"/>
+                                                    <constraint firstAttribute="width" constant="80" id="J55-8D-35a"/>
+                                                    <constraint firstAttribute="height" constant="80" id="qA6-3N-ofU"/>
+                                                </constraints>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="4">
+                                                            <attributes>
+                                                                <color key="NSColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                                                <font key="NSFont" size="30" name="AvenirNext-DemiBold"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="1Xl-TQ-SJg"/>
+                                                        <exclude reference="42C-cq-IjT"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular">
+                                                    <mask key="constraints">
+                                                        <include reference="1Xl-TQ-SJg"/>
+                                                        <include reference="42C-cq-IjT"/>
+                                                        <exclude reference="J55-8D-35a"/>
+                                                        <exclude reference="qA6-3N-ofU"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="PressNumberButton:" destination="4U2-E1-n8g" eventType="touchUpInside" id="6kE-ea-MK9"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="21b-C3-AuF" customClass="RoundButton" customModule="CalculatorFirstAssignment" customModuleProvider="target">
+                                                <rect key="frame" x="90" y="0.0" width="80" height="60"/>
+                                                <color key="backgroundColor" red="0.35513684820000002" green="0.35677631469999999" blue="0.36169471450000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="37L-gK-jdN"/>
+                                                    <constraint firstAttribute="width" constant="80" id="L3p-uc-eg1"/>
+                                                    <constraint firstAttribute="width" constant="80" id="eFz-al-Evn"/>
+                                                    <constraint firstAttribute="height" constant="60" id="gaf-y4-jGj"/>
+                                                </constraints>
+                                                <state key="normal" title="5">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="5">
+                                                            <attributes>
+                                                                <color key="NSColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                                                <font key="NSFont" size="30" name="AvenirNext-DemiBold"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="eFz-al-Evn"/>
+                                                        <exclude reference="gaf-y4-jGj"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular">
+                                                    <mask key="constraints">
+                                                        <exclude reference="37L-gK-jdN"/>
+                                                        <exclude reference="L3p-uc-eg1"/>
+                                                        <include reference="eFz-al-Evn"/>
+                                                        <include reference="gaf-y4-jGj"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="PressNumberButton:" destination="4U2-E1-n8g" eventType="touchUpInside" id="6N7-Pk-xrx"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P7k-kM-aZv" customClass="RoundButton" customModule="CalculatorFirstAssignment" customModuleProvider="target">
+                                                <rect key="frame" x="180" y="0.0" width="80" height="60"/>
+                                                <color key="backgroundColor" red="0.35513684820000002" green="0.35677631469999999" blue="0.36169471450000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="CEv-fQ-yMe"/>
+                                                    <constraint firstAttribute="height" constant="60" id="Gox-nX-Qvq"/>
+                                                    <constraint firstAttribute="height" constant="80" id="bEr-hg-lgY"/>
+                                                    <constraint firstAttribute="width" constant="80" id="zFh-FL-BNr"/>
+                                                </constraints>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="6">
+                                                            <attributes>
+                                                                <color key="NSColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                                                <font key="NSFont" size="30" name="AvenirNext-DemiBold"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="CEv-fQ-yMe"/>
+                                                        <exclude reference="Gox-nX-Qvq"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular">
+                                                    <mask key="constraints">
+                                                        <include reference="CEv-fQ-yMe"/>
+                                                        <include reference="Gox-nX-Qvq"/>
+                                                        <exclude reference="bEr-hg-lgY"/>
+                                                        <exclude reference="zFh-FL-BNr"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="PressNumberButton:" destination="4U2-E1-n8g" eventType="touchUpInside" id="bvY-Wj-MbB"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6cb-l6-1ul" customClass="RoundButton" customModule="CalculatorFirstAssignment" customModuleProvider="target">
+                                                <rect key="frame" x="270" y="0.0" width="80" height="60"/>
+                                                <color key="backgroundColor" red="0.37885780740000002" green="0.5704521615" blue="0.68166388590000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="7m8-gc-hfJ"/>
+                                                    <constraint firstAttribute="height" constant="60" id="AJU-lC-2BV"/>
+                                                    <constraint firstAttribute="height" constant="80" id="KCI-ZR-olC"/>
+                                                    <constraint firstAttribute="width" constant="80" id="bTy-iR-g3o"/>
+                                                </constraints>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="-">
+                                                            <attributes>
+                                                                <color key="NSColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                                                <font key="NSFont" size="40" name="AvenirNext-DemiBold"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="AJU-lC-2BV"/>
+                                                        <exclude reference="bTy-iR-g3o"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular">
+                                                    <mask key="constraints">
+                                                        <exclude reference="7m8-gc-hfJ"/>
+                                                        <include reference="AJU-lC-2BV"/>
+                                                        <exclude reference="KCI-ZR-olC"/>
+                                                        <include reference="bTy-iR-g3o"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="SubtractButtonPressed:" destination="4U2-E1-n8g" eventType="touchUpInside" id="5ad-Oa-svw"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="49Y-1a-42z">
+                                        <rect key="frame" x="0.0" y="204" width="350" height="60"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DvA-aa-FjP" customClass="RoundButton" customModule="CalculatorFirstAssignment" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="60"/>
+                                                <color key="backgroundColor" red="0.35513684820000002" green="0.35677631469999999" blue="0.36169471450000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="Jek-aw-WOQ"/>
+                                                    <constraint firstAttribute="height" constant="60" id="R10-bV-DXh"/>
+                                                    <constraint firstAttribute="height" constant="80" id="Wyd-id-E0g"/>
+                                                    <constraint firstAttribute="width" constant="80" id="ppg-Dg-37X"/>
+                                                </constraints>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="1">
+                                                            <attributes>
+                                                                <color key="NSColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                                                <font key="NSFont" size="30" name="AvenirNext-DemiBold"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="R10-bV-DXh"/>
+                                                        <exclude reference="ppg-Dg-37X"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular">
+                                                    <mask key="constraints">
+                                                        <exclude reference="Jek-aw-WOQ"/>
+                                                        <include reference="R10-bV-DXh"/>
+                                                        <exclude reference="Wyd-id-E0g"/>
+                                                        <include reference="ppg-Dg-37X"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="PressNumberButton:" destination="4U2-E1-n8g" eventType="touchUpInside" id="b8X-In-Cpb"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h7W-vu-DGo" customClass="RoundButton" customModule="CalculatorFirstAssignment" customModuleProvider="target">
+                                                <rect key="frame" x="90" y="0.0" width="80" height="60"/>
+                                                <color key="backgroundColor" red="0.35513684820000002" green="0.35677631469999999" blue="0.36169471450000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="5rG-vp-Rwl"/>
+                                                    <constraint firstAttribute="width" constant="80" id="gJz-HO-YWX"/>
+                                                    <constraint firstAttribute="width" constant="80" id="yIa-YW-Sbh"/>
+                                                    <constraint firstAttribute="height" constant="60" id="z7b-7E-FIe"/>
+                                                </constraints>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="2">
+                                                            <attributes>
+                                                                <color key="NSColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                                                <font key="NSFont" size="30" name="AvenirNext-DemiBold"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="gJz-HO-YWX"/>
+                                                        <exclude reference="z7b-7E-FIe"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular">
+                                                    <mask key="constraints">
+                                                        <exclude reference="5rG-vp-Rwl"/>
+                                                        <include reference="gJz-HO-YWX"/>
+                                                        <exclude reference="yIa-YW-Sbh"/>
+                                                        <include reference="z7b-7E-FIe"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="PressNumberButton:" destination="4U2-E1-n8g" eventType="touchUpInside" id="leb-31-5dy"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nsu-RH-skj" customClass="RoundButton" customModule="CalculatorFirstAssignment" customModuleProvider="target">
+                                                <rect key="frame" x="180" y="0.0" width="80" height="60"/>
+                                                <color key="backgroundColor" red="0.35513684820000002" green="0.35677631469999999" blue="0.36169471450000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="5BF-Qz-SUz"/>
+                                                    <constraint firstAttribute="width" constant="80" id="JI0-3j-ffm"/>
+                                                    <constraint firstAttribute="height" constant="80" id="ddo-Mj-Bps"/>
+                                                    <constraint firstAttribute="width" constant="80" id="fT0-1P-kqy"/>
+                                                </constraints>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="3">
+                                                            <attributes>
+                                                                <color key="NSColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                                                <font key="NSFont" size="30" name="AvenirNext-DemiBold"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="5BF-Qz-SUz"/>
+                                                        <exclude reference="fT0-1P-kqy"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular">
+                                                    <mask key="constraints">
+                                                        <include reference="5BF-Qz-SUz"/>
+                                                        <exclude reference="JI0-3j-ffm"/>
+                                                        <exclude reference="ddo-Mj-Bps"/>
+                                                        <include reference="fT0-1P-kqy"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="PressNumberButton:" destination="4U2-E1-n8g" eventType="touchUpInside" id="DI6-9T-mVp"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F4X-Sb-Pbi" customClass="RoundButton" customModule="CalculatorFirstAssignment" customModuleProvider="target">
+                                                <rect key="frame" x="270" y="0.0" width="80" height="60"/>
+                                                <color key="backgroundColor" red="0.37885780740000002" green="0.5704521615" blue="0.68166388590000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="5iH-h5-jak"/>
+                                                    <constraint firstAttribute="width" constant="80" id="V1j-2Z-AGM"/>
+                                                    <constraint firstAttribute="height" constant="60" id="fed-1E-rto"/>
+                                                    <constraint firstAttribute="height" constant="80" id="u5G-7O-Km5"/>
+                                                </constraints>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="+">
+                                                            <attributes>
+                                                                <color key="NSColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                                                <font key="NSFont" size="30" name="AvenirNext-DemiBold"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="5iH-h5-jak"/>
+                                                        <exclude reference="fed-1E-rto"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular">
+                                                    <mask key="constraints">
+                                                        <include reference="5iH-h5-jak"/>
+                                                        <exclude reference="V1j-2Z-AGM"/>
+                                                        <include reference="fed-1E-rto"/>
+                                                        <exclude reference="u5G-7O-Km5"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="SummationButtonPressed:" destination="4U2-E1-n8g" eventType="touchUpInside" id="E2P-OM-mT2"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <variation key="heightClass=regular-widthClass=regular" hidden="NO"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="JTU-dw-8Rs">
+                                        <rect key="frame" x="0.0" y="272" width="350" height="60"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hKC-Ce-8Og" customClass="RoundButton" customModule="CalculatorFirstAssignment" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="60"/>
+                                                <color key="backgroundColor" red="0.37885780740000002" green="0.5704521615" blue="0.68166388590000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="7d7-Ve-DDF"/>
+                                                    <constraint firstAttribute="height" constant="80" id="gGT-0t-EN7"/>
+                                                    <constraint firstAttribute="height" constant="60" id="hlv-FP-twH"/>
+                                                    <constraint firstAttribute="width" constant="80" id="mMY-aL-rjt"/>
+                                                </constraints>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle"/>
+                                                    <imageReference key="image" image="delete.left" catalog="system" symbolScale="large"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="hlv-FP-twH"/>
+                                                        <exclude reference="mMY-aL-rjt"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular">
+                                                    <mask key="constraints">
+                                                        <exclude reference="7d7-Ve-DDF"/>
+                                                        <exclude reference="gGT-0t-EN7"/>
+                                                        <include reference="hlv-FP-twH"/>
+                                                        <include reference="mMY-aL-rjt"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="BackSpaceButtonPressed:" destination="4U2-E1-n8g" eventType="touchUpInside" id="kD2-W4-l8G"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qvt-6F-SS9" customClass="RoundButton" customModule="CalculatorFirstAssignment" customModuleProvider="target">
+                                                <rect key="frame" x="90" y="0.0" width="80" height="60"/>
+                                                <color key="backgroundColor" red="0.35513684820000002" green="0.35677631469999999" blue="0.36169471450000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="6If-kU-Pp6"/>
+                                                    <constraint firstAttribute="width" constant="80" id="Fi7-Ay-GWc"/>
+                                                    <constraint firstAttribute="height" constant="80" id="Tza-oq-0WM"/>
+                                                    <constraint firstAttribute="width" constant="80" id="bK2-Mg-bys"/>
+                                                </constraints>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="0">
+                                                            <attributes>
+                                                                <color key="NSColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                                                <font key="NSFont" size="30" name="AvenirNext-DemiBold"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="6If-kU-Pp6"/>
+                                                        <exclude reference="bK2-Mg-bys"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular">
+                                                    <mask key="constraints">
+                                                        <include reference="6If-kU-Pp6"/>
+                                                        <exclude reference="Fi7-Ay-GWc"/>
+                                                        <exclude reference="Tza-oq-0WM"/>
+                                                        <include reference="bK2-Mg-bys"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="PressNumberButton:" destination="4U2-E1-n8g" eventType="touchUpInside" id="rya-kO-2qi"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iDv-Y8-7ff" customClass="RoundButton" customModule="CalculatorFirstAssignment" customModuleProvider="target">
+                                                <rect key="frame" x="180" y="0.0" width="80" height="60"/>
+                                                <color key="backgroundColor" red="0.35513684820000002" green="0.35677631469999999" blue="0.36169471450000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="BTS-uM-ANF"/>
+                                                    <constraint firstAttribute="height" constant="60" id="L1Q-aC-S3o"/>
+                                                    <constraint firstAttribute="width" constant="80" id="S8x-65-EuK"/>
+                                                    <constraint firstAttribute="height" constant="80" id="zez-GP-l0K"/>
+                                                </constraints>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content=".">
+                                                            <attributes>
+                                                                <color key="NSColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                                                <font key="NSFont" size="30" name="AvenirNext-DemiBold"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="BTS-uM-ANF"/>
+                                                        <exclude reference="L1Q-aC-S3o"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular">
+                                                    <mask key="constraints">
+                                                        <include reference="BTS-uM-ANF"/>
+                                                        <include reference="L1Q-aC-S3o"/>
+                                                        <exclude reference="S8x-65-EuK"/>
+                                                        <exclude reference="zez-GP-l0K"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="DotButtonPressed:" destination="4U2-E1-n8g" eventType="touchUpInside" id="7Tk-af-N7w"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sYh-aW-kpo" customClass="RoundButton" customModule="CalculatorFirstAssignment" customModuleProvider="target">
+                                                <rect key="frame" x="270" y="0.0" width="80" height="60"/>
+                                                <color key="backgroundColor" red="0.37885780740000002" green="0.5704521615" blue="0.68166388590000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="5Hf-Ie-4Yg"/>
+                                                    <constraint firstAttribute="height" constant="60" id="B0u-Zl-Vwg"/>
+                                                    <constraint firstAttribute="width" constant="80" id="Fiy-H9-HMx"/>
+                                                    <constraint firstAttribute="height" constant="80" id="GbT-42-X0H"/>
+                                                </constraints>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="=">
+                                                            <attributes>
+                                                                <color key="NSColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                                                <font key="NSFont" size="30" name="AvenirNext-DemiBold"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="5Hf-Ie-4Yg"/>
+                                                        <exclude reference="B0u-Zl-Vwg"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular">
+                                                    <mask key="constraints">
+                                                        <include reference="5Hf-Ie-4Yg"/>
+                                                        <include reference="B0u-Zl-Vwg"/>
+                                                        <exclude reference="Fiy-H9-HMx"/>
+                                                        <exclude reference="GbT-42-X0H"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="EqualButtonPressed:" destination="4U2-E1-n8g" eventType="touchUpInside" id="DDp-8W-if8"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="332" id="7iV-yZ-gRH"/>
+                                    <constraint firstAttribute="width" constant="350" id="IOd-a4-it8"/>
+                                    <constraint firstAttribute="height" constant="470" id="xFi-wa-IKX"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="7iV-yZ-gRH"/>
+                                        <exclude reference="IOd-a4-it8"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="7iV-yZ-gRH"/>
+                                        <include reference="IOd-a4-it8"/>
+                                        <exclude reference="xFi-wa-IKX"/>
+                                    </mask>
+                                </variation>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1234567890" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mOe-jG-Hw1">
+                                <rect key="frame" x="335" y="0.0" width="531" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="9SA-vx-dFQ"/>
+                                    <constraint firstAttribute="height" constant="80" id="Jke-hs-DIi"/>
+                                    <constraint firstAttribute="width" constant="531" id="e8d-iG-LVB"/>
+                                    <constraint firstAttribute="height" constant="62" id="eKW-v5-Mxs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="45"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="e8d-iG-LVB"/>
+                                        <exclude reference="eKW-v5-Mxs"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="constraints">
+                                        <exclude reference="9SA-vx-dFQ"/>
+                                        <exclude reference="Jke-hs-DIi"/>
+                                        <include reference="e8d-iG-LVB"/>
+                                        <include reference="eKW-v5-Mxs"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <stackView opaque="NO" contentMode="center" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="36a-ZI-SE7">
+                                <rect key="frame" x="25" y="70" width="80" height="128"/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="center" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hrA-2S-Lpi">
+                                <rect key="frame" x="140" y="70" width="80" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oC3-Fa-vmM" customClass="RoundButton" customModule="CalculatorFirstAssignment" customModuleProvider="target">
+                                <rect key="frame" x="428" y="70" width="80" height="60"/>
+                                <color key="backgroundColor" red="0.45480537409999999" green="0.43912538890000002" blue="0.4431378245" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="LR4-kG-dNC"/>
+                                    <constraint firstAttribute="height" constant="60" id="Uhi-AJ-vN9"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="cos">
+                                            <attributes>
+                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <font key="NSFont" size="30" name="AvenirNext-DemiBold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="clipping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="LR4-kG-dNC"/>
+                                        <exclude reference="Uhi-AJ-vN9"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="LR4-kG-dNC"/>
+                                        <include reference="Uhi-AJ-vN9"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="CosPressed:" destination="4U2-E1-n8g" eventType="touchUpInside" id="yGa-Qf-ER3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IRo-M7-75c" customClass="RoundButton" customModule="CalculatorFirstAssignment" customModuleProvider="target">
+                                <rect key="frame" x="428" y="138" width="80" height="128"/>
+                                <color key="backgroundColor" red="0.45480537409999999" green="0.43912538890000002" blue="0.4431378245" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="BPX-Wf-hI8"/>
+                                    <constraint firstAttribute="width" constant="80" id="Hrt-jf-EET"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="tan">
+                                            <attributes>
+                                                <color key="NSColor" red="0.99625520031861581" green="0.99625520031861581" blue="0.99625520031861581" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <font key="NSFont" size="30" name="AvenirNext-DemiBold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="BPX-Wf-hI8"/>
+                                        <exclude reference="Hrt-jf-EET"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="BPX-Wf-hI8"/>
+                                        <include reference="Hrt-jf-EET"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="TanPressed:" destination="4U2-E1-n8g" eventType="touchUpInside" id="Rx3-eY-Fzk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ADx-Lf-AeR" customClass="RoundButton" customModule="CalculatorFirstAssignment" customModuleProvider="target">
+                                <rect key="frame" x="428" y="274" width="80" height="128"/>
+                                <color key="backgroundColor" red="0.45480537409999999" green="0.43912538890000002" blue="0.4431378245" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="I5Y-hq-3aa"/>
+                                    <constraint firstAttribute="width" constant="80" id="trX-OU-H1j"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="sin">
+                                            <attributes>
+                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <font key="NSFont" size="30" name="AvenirNext-DemiBold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="clipping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="I5Y-hq-3aa"/>
+                                        <exclude reference="trX-OU-H1j"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="I5Y-hq-3aa"/>
+                                        <include reference="trX-OU-H1j"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="SinPressed:" destination="4U2-E1-n8g" eventType="touchUpInside" id="tIG-v8-dVh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fvy-Ht-wsr" customClass="RoundButton" customModule="CalculatorFirstAssignment" customModuleProvider="target">
+                                <rect key="frame" x="340" y="70" width="80" height="60"/>
+                                <color key="backgroundColor" red="0.45480537409999999" green="0.43912538890000002" blue="0.4431378245" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Pfj-ey-HvC"/>
+                                    <constraint firstAttribute="width" constant="80" id="ua4-3p-61Q"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="𝛑">
+                                            <attributes>
+                                                <color key="NSColor" red="0.99764159231474903" green="0.99764159231474903" blue="0.99764159231474903" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <font key="NSFont" size="48" name="STIXGeneral-Regular"/>
+                                                <font key="NSOriginalFont" metaFont="system" size="15"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="clipping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Pfj-ey-HvC"/>
+                                        <exclude reference="ua4-3p-61Q"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="Pfj-ey-HvC"/>
+                                        <include reference="ua4-3p-61Q"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="PiPressed:" destination="4U2-E1-n8g" eventType="touchUpInside" id="CVn-zS-SFb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pFy-XE-wSh" customClass="RoundButton" customModule="CalculatorFirstAssignment" customModuleProvider="target">
+                                <rect key="frame" x="340" y="138" width="80" height="60"/>
+                                <color key="backgroundColor" red="0.45480537409999999" green="0.43912538890000002" blue="0.4431378245" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="IhH-Za-Mqz"/>
+                                    <constraint firstAttribute="height" constant="60" id="UmQ-EO-6IR"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="√">
+                                            <attributes>
+                                                <color key="NSColor" red="0.97446957983151827" green="0.97446957983151827" blue="0.97446957983151827" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <font key="NSFont" size="36" name="AvenirNext-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="IhH-Za-Mqz"/>
+                                        <exclude reference="UmQ-EO-6IR"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="IhH-Za-Mqz"/>
+                                        <include reference="UmQ-EO-6IR"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="RadicalPressed:" destination="4U2-E1-n8g" eventType="touchUpInside" id="Mpk-1o-Vcd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eFm-ew-Sit" customClass="RoundButton" customModule="CalculatorFirstAssignment" customModuleProvider="target">
+                                <rect key="frame" x="340" y="204.66666666666666" width="80" height="59.999999999999972"/>
+                                <color key="backgroundColor" red="0.45480537409999999" green="0.43912538890000002" blue="0.4431378245" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="Qxu-2b-iTL"/>
+                                    <constraint firstAttribute="height" constant="60" id="ddI-dN-uTq"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="x^2">
+                                            <attributes>
+                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <font key="NSFont" size="30" name="AmericanTypewriter-Semibold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Qxu-2b-iTL"/>
+                                        <exclude reference="ddI-dN-uTq"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="Qxu-2b-iTL"/>
+                                        <include reference="ddI-dN-uTq"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="SquarePressed:" destination="4U2-E1-n8g" eventType="touchUpInside" id="amn-WD-gm5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="at1-RV-4ee" customClass="RoundButton" customModule="CalculatorFirstAssignment" customModuleProvider="target">
+                                <rect key="frame" x="340" y="272" width="80" height="130"/>
+                                <color key="backgroundColor" red="0.45480537409999999" green="0.43912538890000002" blue="0.4431378245" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Oxm-ZS-thr"/>
+                                    <constraint firstAttribute="width" constant="80" id="Rvf-ki-Qx6"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Rand">
+                                            <attributes>
+                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <font key="NSFont" size="30" name="AvenirNext-DemiBold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Oxm-ZS-thr"/>
+                                        <exclude reference="Rvf-ki-Qx6"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="Oxm-ZS-thr"/>
+                                        <include reference="Rvf-ki-Qx6"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="RandPressed:" destination="4U2-E1-n8g" eventType="touchUpInside" id="bOL-ha-gHg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="y6D-w1-CD4"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="evc-QV-vk0" firstAttribute="leading" secondItem="oC3-Fa-vmM" secondAttribute="trailing" constant="8" symbolic="YES" id="1KC-4H-A3D"/>
+                            <constraint firstItem="evc-QV-vk0" firstAttribute="centerX" secondItem="eWl-dZ-kys" secondAttribute="centerX" id="1jl-JG-Kf9"/>
+                            <constraint firstItem="ADx-Lf-AeR" firstAttribute="leading" secondItem="at1-RV-4ee" secondAttribute="trailing" constant="8" symbolic="YES" id="31v-64-V6P"/>
+                            <constraint firstItem="pFy-XE-wSh" firstAttribute="top" secondItem="fvy-Ht-wsr" secondAttribute="bottom" constant="8" symbolic="YES" id="4gG-DG-6hd"/>
+                            <constraint firstItem="fvy-Ht-wsr" firstAttribute="leading" secondItem="y6D-w1-CD4" secondAttribute="leading" constant="296" id="8MW-uJ-kaO"/>
+                            <constraint firstItem="y6D-w1-CD4" firstAttribute="bottom" secondItem="ADx-Lf-AeR" secondAttribute="bottom" constant="5" id="Dmm-rL-6an"/>
+                            <constraint firstItem="fvy-Ht-wsr" firstAttribute="top" secondItem="mOe-jG-Hw1" secondAttribute="bottom" constant="8" symbolic="YES" id="JUb-XL-gNH"/>
+                            <constraint firstItem="mOe-jG-Hw1" firstAttribute="top" secondItem="y6D-w1-CD4" secondAttribute="top" constant="268" id="Jug-yE-rcV"/>
+                            <constraint firstItem="IRo-M7-75c" firstAttribute="leading" secondItem="pFy-XE-wSh" secondAttribute="trailing" constant="8" symbolic="YES" id="KsG-jT-88b"/>
+                            <constraint firstItem="mOe-jG-Hw1" firstAttribute="top" secondItem="y6D-w1-CD4" secondAttribute="top" id="MtD-wa-W6o"/>
+                            <constraint firstItem="mOe-jG-Hw1" firstAttribute="leading" secondItem="y6D-w1-CD4" secondAttribute="leading" constant="39" id="NnJ-UC-tO1"/>
+                            <constraint firstItem="evc-QV-vk0" firstAttribute="top" secondItem="mOe-jG-Hw1" secondAttribute="bottom" constant="8" symbolic="YES" id="OKC-re-ZIP"/>
+                            <constraint firstItem="y6D-w1-CD4" firstAttribute="trailing" secondItem="mOe-jG-Hw1" secondAttribute="trailing" constant="16" id="PdD-e5-O4g"/>
+                            <constraint firstItem="oC3-Fa-vmM" firstAttribute="top" secondItem="mOe-jG-Hw1" secondAttribute="bottom" constant="8" symbolic="YES" id="Q66-Lp-5If"/>
+                            <constraint firstItem="evc-QV-vk0" firstAttribute="leading" secondItem="ADx-Lf-AeR" secondAttribute="trailing" constant="8" symbolic="YES" id="RFf-Fp-lcm"/>
+                            <constraint firstItem="36a-ZI-SE7" firstAttribute="leading" secondItem="y6D-w1-CD4" secondAttribute="leading" constant="291" id="SiB-ax-hcf"/>
+                            <constraint firstItem="pFy-XE-wSh" firstAttribute="leading" secondItem="y6D-w1-CD4" secondAttribute="leading" constant="296" id="Ubj-yq-lFz"/>
+                            <constraint firstItem="y6D-w1-CD4" firstAttribute="bottom" secondItem="36a-ZI-SE7" secondAttribute="bottom" constant="4" id="VrI-mR-ssV"/>
+                            <constraint firstItem="at1-RV-4ee" firstAttribute="leading" secondItem="y6D-w1-CD4" secondAttribute="leading" constant="296" id="Vx1-hH-od1"/>
+                            <constraint firstItem="ADx-Lf-AeR" firstAttribute="top" secondItem="IRo-M7-75c" secondAttribute="bottom" constant="8" symbolic="YES" id="WQQ-mx-TFo"/>
+                            <constraint firstItem="evc-QV-vk0" firstAttribute="top" secondItem="mOe-jG-Hw1" secondAttribute="bottom" constant="8" symbolic="YES" id="aF3-Mk-Nv8"/>
+                            <constraint firstItem="y6D-w1-CD4" firstAttribute="trailing" secondItem="evc-QV-vk0" secondAttribute="trailing" constant="16" id="bOr-YN-ucc"/>
+                            <constraint firstItem="y6D-w1-CD4" firstAttribute="bottom" secondItem="evc-QV-vk0" secondAttribute="bottom" constant="5" id="bSn-dj-hVx"/>
+                            <constraint firstItem="at1-RV-4ee" firstAttribute="top" secondItem="eFm-ew-Sit" secondAttribute="bottom" constant="7.3300000000000001" id="cM6-AZ-5fD"/>
+                            <constraint firstItem="oC3-Fa-vmM" firstAttribute="leading" secondItem="fvy-Ht-wsr" secondAttribute="trailing" constant="8" symbolic="YES" id="dd8-HO-4Eh"/>
+                            <constraint firstItem="y6D-w1-CD4" firstAttribute="trailing" secondItem="mOe-jG-Hw1" secondAttribute="trailing" constant="39" id="dvz-8y-eaK"/>
+                            <constraint firstItem="evc-QV-vk0" firstAttribute="leading" secondItem="IRo-M7-75c" secondAttribute="trailing" constant="8" symbolic="YES" id="fhs-wB-Dzz"/>
+                            <constraint firstItem="IRo-M7-75c" firstAttribute="top" secondItem="oC3-Fa-vmM" secondAttribute="bottom" constant="8" symbolic="YES" id="iqI-wx-fx2"/>
+                            <constraint firstItem="eFm-ew-Sit" firstAttribute="top" secondItem="pFy-XE-wSh" secondAttribute="bottom" constant="6.6699999999999999" id="oag-ey-XUb"/>
+                            <constraint firstItem="y6D-w1-CD4" firstAttribute="bottom" secondItem="evc-QV-vk0" secondAttribute="bottom" constant="15" id="rqF-xn-2f6"/>
+                            <constraint firstItem="36a-ZI-SE7" firstAttribute="top" secondItem="y6D-w1-CD4" secondAttribute="top" constant="70" id="ub6-E5-uR0"/>
+                            <constraint firstItem="mOe-jG-Hw1" firstAttribute="leading" secondItem="y6D-w1-CD4" secondAttribute="leading" constant="291" id="wPL-WD-XFu"/>
+                            <constraint firstItem="y6D-w1-CD4" firstAttribute="bottom" secondItem="at1-RV-4ee" secondAttribute="bottom" constant="5" id="we3-Jx-Vh8"/>
+                            <constraint firstItem="eFm-ew-Sit" firstAttribute="leading" secondItem="y6D-w1-CD4" secondAttribute="leading" constant="296" id="zq6-Kc-DWc"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="36a-ZI-SE7"/>
+                                <exclude reference="hrA-2S-Lpi"/>
+                                <exclude reference="oC3-Fa-vmM"/>
+                                <exclude reference="IRo-M7-75c"/>
+                                <exclude reference="ADx-Lf-AeR"/>
+                                <exclude reference="fvy-Ht-wsr"/>
+                                <exclude reference="pFy-XE-wSh"/>
+                                <exclude reference="eFm-ew-Sit"/>
+                                <exclude reference="at1-RV-4ee"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="8MW-uJ-kaO"/>
+                                <exclude reference="JUb-XL-gNH"/>
+                                <exclude reference="4gG-DG-6hd"/>
+                                <exclude reference="Ubj-yq-lFz"/>
+                                <exclude reference="Dmm-rL-6an"/>
+                                <exclude reference="PdD-e5-O4g"/>
+                                <exclude reference="bOr-YN-ucc"/>
+                                <exclude reference="bSn-dj-hVx"/>
+                                <exclude reference="we3-Jx-Vh8"/>
+                                <exclude reference="oag-ey-XUb"/>
+                                <exclude reference="zq6-Kc-DWc"/>
+                                <exclude reference="Q66-Lp-5If"/>
+                                <exclude reference="dd8-HO-4Eh"/>
+                                <exclude reference="KsG-jT-88b"/>
+                                <exclude reference="iqI-wx-fx2"/>
+                                <exclude reference="Vx1-hH-od1"/>
+                                <exclude reference="cM6-AZ-5fD"/>
+                                <exclude reference="MtD-wa-W6o"/>
+                                <exclude reference="wPL-WD-XFu"/>
+                                <exclude reference="31v-64-V6P"/>
+                                <exclude reference="WQQ-mx-TFo"/>
+                                <exclude reference="1KC-4H-A3D"/>
+                                <exclude reference="OKC-re-ZIP"/>
+                                <exclude reference="RFf-Fp-lcm"/>
+                                <exclude reference="fhs-wB-Dzz"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="subviews">
+                                <exclude reference="36a-ZI-SE7"/>
+                                <exclude reference="hrA-2S-Lpi"/>
+                                <include reference="oC3-Fa-vmM"/>
+                                <include reference="IRo-M7-75c"/>
+                                <include reference="ADx-Lf-AeR"/>
+                                <include reference="fvy-Ht-wsr"/>
+                                <include reference="pFy-XE-wSh"/>
+                                <include reference="eFm-ew-Sit"/>
+                                <include reference="at1-RV-4ee"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="SiB-ax-hcf"/>
+                                <exclude reference="ub6-E5-uR0"/>
+                                <include reference="8MW-uJ-kaO"/>
+                                <include reference="JUb-XL-gNH"/>
+                                <include reference="4gG-DG-6hd"/>
+                                <include reference="Ubj-yq-lFz"/>
+                                <include reference="Dmm-rL-6an"/>
+                                <include reference="PdD-e5-O4g"/>
+                                <exclude reference="VrI-mR-ssV"/>
+                                <include reference="bOr-YN-ucc"/>
+                                <include reference="bSn-dj-hVx"/>
+                                <exclude reference="dvz-8y-eaK"/>
+                                <exclude reference="rqF-xn-2f6"/>
+                                <include reference="we3-Jx-Vh8"/>
+                                <include reference="oag-ey-XUb"/>
+                                <include reference="zq6-Kc-DWc"/>
+                                <include reference="Q66-Lp-5If"/>
+                                <include reference="dd8-HO-4Eh"/>
+                                <include reference="KsG-jT-88b"/>
+                                <include reference="iqI-wx-fx2"/>
+                                <include reference="Vx1-hH-od1"/>
+                                <include reference="cM6-AZ-5fD"/>
+                                <exclude reference="Jug-yE-rcV"/>
+                                <include reference="MtD-wa-W6o"/>
+                                <exclude reference="NnJ-UC-tO1"/>
+                                <include reference="wPL-WD-XFu"/>
+                                <include reference="31v-64-V6P"/>
+                                <include reference="WQQ-mx-TFo"/>
+                                <include reference="1KC-4H-A3D"/>
+                                <exclude reference="1jl-JG-Kf9"/>
+                                <include reference="OKC-re-ZIP"/>
+                                <include reference="RFf-Fp-lcm"/>
+                                <exclude reference="aF3-Mk-Nv8"/>
+                                <include reference="fhs-wB-Dzz"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="ResultLable" destination="mOe-jG-Hw1" id="E9v-Gb-9YC"/>
+                        <outlet property="vwCalc" destination="eWl-dZ-kys" id="I7t-ZJ-bOw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lk8-45-wZ2" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4019" y="-721"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="21b-C3-AuF">
+            <size key="intrinsicContentSize" width="30" height="53"/>
+        </designable>
+        <designable name="4Zx-C2-f0K">
+            <size key="intrinsicContentSize" width="30" height="53"/>
+        </designable>
+        <designable name="6cb-l6-1ul">
+            <size key="intrinsicContentSize" width="30" height="66.666666666666671"/>
+        </designable>
+        <designable name="ADx-Lf-AeR">
+            <size key="intrinsicContentSize" width="39" height="53"/>
+        </designable>
+        <designable name="CGa-Su-M52">
+            <size key="intrinsicContentSize" width="42" height="53"/>
+        </designable>
+        <designable name="Du0-ub-xj1">
+            <size key="intrinsicContentSize" width="30" height="53"/>
+        </designable>
+        <designable name="DvA-aa-FjP">
+            <size key="intrinsicContentSize" width="30" height="53"/>
+        </designable>
+        <designable name="F4X-Sb-Pbi">
+            <size key="intrinsicContentSize" width="30" height="53"/>
+        </designable>
+        <designable name="GKX-KV-6XB">
+            <size key="intrinsicContentSize" width="42" height="53"/>
+        </designable>
+        <designable name="IRo-M7-75c">
+            <size key="intrinsicContentSize" width="45" height="53"/>
+        </designable>
+        <designable name="JzW-a7-KsP">
+            <size key="intrinsicContentSize" width="30" height="53"/>
+        </designable>
+        <designable name="OKd-9g-NyW">
+            <size key="intrinsicContentSize" width="30" height="53"/>
+        </designable>
+        <designable name="P7k-kM-aZv">
+            <size key="intrinsicContentSize" width="30" height="53"/>
+        </designable>
+        <designable name="Qvt-6F-SS9">
+            <size key="intrinsicContentSize" width="30" height="53"/>
+        </designable>
+        <designable name="XyN-kv-Vb7">
+            <size key="intrinsicContentSize" width="30" height="53"/>
+        </designable>
+        <designable name="YMf-AU-Ah4">
+            <size key="intrinsicContentSize" width="30" height="53"/>
+        </designable>
+        <designable name="at1-RV-4ee">
+            <size key="intrinsicContentSize" width="72" height="53"/>
+        </designable>
+        <designable name="eFm-ew-Sit">
+            <size key="intrinsicContentSize" width="54" height="46.666666666666664"/>
+        </designable>
+        <designable name="fvy-Ht-wsr">
+            <size key="intrinsicContentSize" width="31" height="84.333333333333329"/>
+        </designable>
+        <designable name="h7W-vu-DGo">
+            <size key="intrinsicContentSize" width="30" height="53"/>
+        </designable>
+        <designable name="hKC-Ce-8Og">
+            <size key="intrinsicContentSize" width="26.666666666666668" height="22"/>
+        </designable>
+        <designable name="iDv-Y8-7ff">
+            <size key="intrinsicContentSize" width="30" height="53"/>
+        </designable>
+        <designable name="nSE-0r-XK0">
+            <size key="intrinsicContentSize" width="30" height="53"/>
+        </designable>
+        <designable name="nsu-RH-skj">
+            <size key="intrinsicContentSize" width="30" height="53"/>
+        </designable>
+        <designable name="oC3-Fa-vmM">
+            <size key="intrinsicContentSize" width="47" height="53"/>
+        </designable>
+        <designable name="pFy-XE-wSh">
+            <size key="intrinsicContentSize" width="30" height="61.333333333333336"/>
+        </designable>
+        <designable name="sYh-aW-kpo">
+            <size key="intrinsicContentSize" width="30" height="53"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="delete.left" catalog="system" width="128" height="104"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
