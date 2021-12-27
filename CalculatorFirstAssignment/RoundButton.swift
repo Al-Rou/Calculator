@@ -1,9 +1,7 @@
 //
 //  RoundButton.swift
 //  CalculatorFirstAssignment
-//
-//  Created by Shirin Mansouri on 2021-09-24.
-//
+
 
 import UIKit
 
